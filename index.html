@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+  <title>My Salon</title>
+
+  <style>
+    .hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.507)),
+  url("images/Image_fx (2).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.write{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes content to top & bottom */
+  padding: 20px;
+  min-height: 90vh;
+}
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.15); /* transparent white */
+  backdrop-filter: blur(10px); /* blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.foot{
+  margin-top: 40px;
+}
+  </style>
+
+</head>
+<body>
+
+<div class="container-fluid hero-section p-2 ">
+
+  <!-- Navbar on top of background -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid glass-navbar p-2">
+
+  <a class="navbar-brand" href="#">
+    <img src="images/pngtree-growth-business-company-logo-png-image_728232-removebg-preview.png" alt="Logo" height="45">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Products</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">About us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Contact Us</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Sessions</a>
+      </li>
+
+    </ul>
+
+    <form class="d-flex">
+      <input class="form-control me-2" type="search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+
+  </div>
+
+</div>
+  </nav>
+  <div class="container-fluid write text-white">
+
+  <div class="abt text-center">
+    <h2 class="mb-2">Welcome To The General Hub</h2>
+    <p class="mb-1">Leading SALON store in 33, Opebi Rd</p>
+    <p class="mb-0">Ikeja, Lagos</p>
+  </div>
+
+  <div class="foot text-center mb-4">
+    <a href="#" class="btn btn-primary btn-lg">BOOK A SESSION</a>
+  </div>
+</div>
+</div>
+<div class="services text-center fw-bold py-5" style="background-color: rgb(255,213,196);">
+  
+  <h1 class="mb-3">OUR SERVICES</h1>
+  <hr class="services-line">
+
+  <div class="services-wrapper">
+    <div class="services-track py-3">
+
+      <div class="service-card">
+        <img src="./images/hairmake.png" >
+        <p>Hair Making</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/barb.png" >
+        <p>Barbing</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/nailtech.png" >
+        <p>Nails Polishing</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/pedicure.png" >
+        <p>Pedicure</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/Image_fx (2).png" >
+        <p>Space Rental</p>
+      </div>
+      <div class="service-card">
+        <img src="./images/hairmake.png" >
+        <p>Hair Making</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/barb.png" >
+        <p>Barbing</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/nailtech.png" >
+        <p>Nails Polishing</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/pedicure.png" >
+        <p>Pedicure</p>
+      </div>
+
+      <div class="service-card">
+        <img src="./images/Image_fx (2).png" >
+        <p>Space Rental</p>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-md-6">
+    <div class="card">
+        <div class="position-relative">
+            <img src="./images/lipsred.png" class="card-img-top img-slide active" alt="Purple Lip">
+            <img src="./images/lipblack.png" class="card-img-top img-slide" alt="Black Lip">
+            <img src="./images/lipss.jfif" class="card-img-top img-slide" alt="Purple Lip">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Lip Gloss</h5>
+            <p class="card-text">The perfect lip gloss combo does exist</p>
+            
+            <!-- Color Options -->
+            <div class="d-flex gap-2 mb-2">
+                <span class="color-circle" style="background-color:purple;" onclick="showImage(this,0)"></span>
+                <span class="color-circle" style="background-color:black;" onclick="showImage(this,1)"></span>
+                <span class="color-circle" style="background-color:red;" onclick="showImage(this,2)"></span>
+            </div>
+
+            <a href="#" class="btn btn-primary">Make Enquiry</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function showImage(element, index) {
+    // Find the closest card for the clicked circle
+    const card = element.closest('.card');
+    const images = card.querySelectorAll('.img-slide');
+
+    images.forEach((img, i) => {
+        if (i === index) {
+            img.classList.add('active');
+        } else {
+            img.classList.remove('active');
+        }
+    });
+}
+</script>
+
+  <div class="col-md-6">
+    <div class="card">
+        <div class="position-relative">
+            <img src="./images/bonesbr.jpg" class="card-img-top img-slide active" alt="Brown hair">
+            <img src="./images/bonesbur.png" class="card-img-top img-slide" alt="Burgundy hair">
+            <img src="./images/bonestr.jpg" class="card-img-top img-slide" alt="Strawberry hair">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Bone Straight</h5>
+            <p class="card-text">Super quality hair</p>
+            
+            <!-- Color Options -->
+            <div class="d-flex gap-2 mb-2">
+                <span class="color-circle" style="background-color:burlywood;" onclick="showImage(this,0)"></span>
+                <span class="color-circle" style="background-color:brown;" onclick="showImage(this,1)"></span>
+                <span class="color-circle" style="background-color:orange;" onclick="showImage(this,2)"></span>
+            </div>
+
+            <a href="#" class="btn btn-primary">Make Enquiry</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function showImage(element, index) {
+    // Find the closest card for the clicked circle
+    const card = element.closest('.card');
+    const images = card.querySelectorAll('.img-slide');
+
+    images.forEach((img, i) => {
+        if (i === index) {
+            img.classList.add('active');
+        } else {
+            img.classList.remove('active');
+        }
+    });
+}
+</script>
+  </div>    
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<audio id="scrollSound" src="./sounds/333043__christopherderp__videogame-menu-button-clicking-sound-16.wav" preload="auto"></audio>
+<script>
+const wrapper = document.querySelector(".services-wrapper");
+const sound = document.getElementById("scrollSound");
+
+let lastPlay = 0;
+
+wrapper.addEventListener("scroll", () => {
+
+  let now = Date.now();
+
+  // prevent sound from playing too fast
+  if(now - lastPlay > 200){
+      sound.currentTime = 0;
+      sound.play();
+      lastPlay = now;
+  }
+
+});
+</script>
+</body>
+</html>
