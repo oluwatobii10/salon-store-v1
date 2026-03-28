@@ -14,9 +14,15 @@
   width: max-content;
   animation: scrollServices 25s linear infinite;
 }
+.services-container{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
 .service-card{
   background: white;
-  min-width: 160px;
+  min-width: 200px;
+  margin-right: 15px;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
